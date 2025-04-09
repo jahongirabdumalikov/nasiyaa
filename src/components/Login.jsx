@@ -9,7 +9,7 @@ import API from "../API";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [cusername, setUsername] = useState("");
+  const [username, setUsername] = useState(""); // <-- to‘g‘rilandi
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +21,7 @@ const Login = () => {
     try {
       const res = await API.post("/auth/login", {
         hashed_password: password,
-        login: username,
+        login: username, // <-- to‘g‘rilandi
       });
 
       if (res.status === 201) {
@@ -57,7 +57,7 @@ const Login = () => {
             <img src={myImages} alt="icon.svg" />
             <input
               type="text"
-              value={username}
+              value={username} // <-- to‘g‘rilandi
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Ismingizni kiriting"
             />

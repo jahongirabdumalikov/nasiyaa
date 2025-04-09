@@ -57,9 +57,9 @@ const Login = () => {
             <img src={myImages} alt="icon.svg" />
             <input
               type="text"
-              value={username} // <-- to‘g‘rilandi
+              value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Ismingizni kiriting"
+              placeholder="amirbek"
             />
           </div>
         </div>
@@ -71,7 +71,7 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Parolingizni kiriting"
+              placeholder="amirbek1121"
             />
             <button
               type="button"
